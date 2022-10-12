@@ -1,22 +1,60 @@
 {
   "name": "@michzuerch/privaterautomarkt5",
   "type": "module",
+  "description": "homagepage for billig-cars.de using Astro + Tailwind CSS.",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://github.com/michzuerch/PrivaterAutomarkt5#readme",
+  "author": {
+    "name": "Michael Zuercher",
+    "email": "michzuerch@gmail.com",
+    "url": "https://github.io/michzuerch"
+  },
+  "displayName": "Privater Automarkt 5",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michzuerch/PrivaterAutomarkt5.git"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check": "astro check",
+    "format": "prettier -w .",
+    "lint": "eslint . --ext .js,.ts,.astro",
+    "subfont": "subfont -ir --no-fallbacks --silent --root dist"
   },
-  "dependencies": {
+  "devDependencies": {
+    "@astrojs/image": "^0.9.3",
     "@astrojs/mdx": "^0.11.4",
+    "@astrojs/sitemap": "^1.0.0",
     "@astrojs/tailwind": "^2.0.2",
+    "@astrolib/analytics": "^0.2.4",
+    "@astrolib/seo": "^0.2.1",
+    "@fontsource/inter": "^4.5.13",
+    "@tailwindcss/typography": "^0.5.7",
+    "@types/canvas-confetti": "^1.4.3",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
     "astro": "^1.4.7",
+    "astro-icon": "^0.7.3",
     "autoprefixer": "^10.4.12",
     "canvas-confetti": "^1.5.1",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-astro": "^0.20.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
     "postcss": "^8.4.17",
-    "tailwindcss": "^3.1.8"
+    "prettier": "^2.7.1",
+    "prettier-plugin-astro": "^0.5.5",
+    "subfont": "^6.12.1",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.8.4"
+  },
+  "engines": {
+    "node": "^14.15.0 || >=16.0.0"
   }
 }
