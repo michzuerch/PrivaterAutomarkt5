@@ -11,14 +11,14 @@ const { content } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>Privater Automarkt Radolfzell</title>
 	</head>
-	<body
-		class="antialiased text-gray-900 dark:text-slate-300 tracking-tight bg-white dark:bg-slate-900"
-	>
-		<Navigation />
-		<main>
-			<slot />
-			<!-- Dein Inhalt wird hier eingefügt -->
-		</main>
-		<footer>Footer</footer>
+	<body class="font-sans antialiased min-h-screen">
+		<div class="bg-gray-100 dark:bg-gray-800 transition-colors">
+			<Navigation />
+			<main>
+				<slot />
+				<!-- Dein Inhalt wird hier eingefügt -->
+			</main>
+			<footer>Footer</footer>
+		</div>
 	</body>
 </html>
