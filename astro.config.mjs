@@ -7,6 +7,6 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
 	//@todo  Change to productive environment
-	site: 'http://localhost:3000',
+	site: "http://localhost:3000",
 	integrations: [tailwind(), mdx(), sitemap()],
 });

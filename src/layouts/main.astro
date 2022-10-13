@@ -2,14 +2,26 @@
 const { content } = Astro.props;
 ---
 
-<html lang="de">
+<html lang="de" class="motion-safe:scroll-smooth 2xl:text-[20px]">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>{content.title}</title>
+		<title>Privater Automarkt Radolfzell</title>
 	</head>
-	<body>
-		<slot />
+	<body
+		class="antialiased text-gray-900 dark:text-slate-300 tracking-tight bg-white dark:bg-slate-900"
+	>
+		<nav>
+			<a href="#">Startseite</a>
+			<a href="#">Beiträge</a>
+			<a href="#">Kontakt</a>
+		</nav>
+		<main>
+			<slot />
+			<!-- Dein Inhalt wird hier eingefügt -->
+		</main>
+		<footer>Footer</footer>
 	</body>
 </html>
