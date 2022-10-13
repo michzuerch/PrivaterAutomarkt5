@@ -63,5 +63,10 @@
   },
   "engines": {
     "node": "^14.15.0 || >=16.0.0"
+  },
+  "dependencies": {
+    "@astrojs/svelte": "^1.0.1",
+    "daisyui": "^2.31.0",
+    "svelte": "^3.51.0"
   }
 }

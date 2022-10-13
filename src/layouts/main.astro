@@ -1,8 +1,9 @@
 ---
+import Navigation from "~/components/Navigation.astro";
 const { content } = Astro.props;
 ---
 
-<html lang="de" class="motion-safe:scroll-smooth 2xl:text-[20px]">
+<html lang="de">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -13,11 +14,7 @@ const { content } = Astro.props;
 	<body
 		class="antialiased text-gray-900 dark:text-slate-300 tracking-tight bg-white dark:bg-slate-900"
 	>
-		<nav>
-			<a href="#">Startseite</a>
-			<a href="#">Beiträge</a>
-			<a href="#">Kontakt</a>
-		</nav>
+		<Navigation />
 		<main>
 			<slot />
 			<!-- Dein Inhalt wird hier eingefügt -->
