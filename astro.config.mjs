@@ -6,6 +6,6 @@ import svelte from "@astrojs/svelte";
 export default defineConfig({
 	//@todo  Change to productive environment
 	site: "https://michzuerch.github.io",
-  //base: "/PrivaterAutomarkt5",
+  base: "/PrivaterAutomarkt5",
 	integrations: [tailwind(), mdx(), sitemap(), svelte()],
 });
