@@ -1,4 +1,4 @@
-name: Deploy homepage to github pages
+name: DeployGhPages
 
 on:
   # Löst den Workflow bei jedem Push auf den `main`-Branch aus
