@@ -3,7 +3,6 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
 import svelte from '@astrojs/svelte';
-import compress from 'astro-compress';
 import image from '@astrojs/image';
 
 export default defineConfig({
@@ -13,5 +12,5 @@ export default defineConfig({
 	build: {
 		format: 'file',
 	},
-	integrations: [tailwind(), mdx(), sitemap(), svelte(), compress(), image()],
+	integrations: [tailwind(), mdx(), sitemap(), svelte(), image()],
 });
