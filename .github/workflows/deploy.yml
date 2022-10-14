@@ -1,10 +1,10 @@
-name: Deploy homepage to github pages
-
+name: DeployGhPages
 on:
   # Löst den Workflow bei jedem Push auf den `main`-Branch aus
   # Verwendest du einen anderen Branch-Namen? Ersetze `main` durch den Namen deines Branches
   push:
     branches: [ deploy ]
+  
   # Erlaubt es dir, diesen Workflow manuell über den Actions-Tab auf GitHub zu starten
   workflow_dispatch:
   
