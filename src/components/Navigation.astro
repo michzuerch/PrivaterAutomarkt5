@@ -1,5 +1,8 @@
 ---
-//console.log(Astro.site);
+console.log("Site:",Astro.site);
+//@todo change to productive environment
+const urlHome = Astro.url.pathname;
+//console.log("URL for home is:" + urlHome);
 ---
 
 <div class="navbar bg-base-100">
@@ -27,7 +30,7 @@
 				<li><a href="impressum">Impressum</a></li>
 			</ul>
 		</div>
-		<a href="https://michzuerch.github.io/PrivaterAutomarkt5/" class="btn btn-ghost normal-case text-xl"
+		<a href={urlHome} class="btn btn-ghost normal-case text-xl"
 			>Privater Automarkt</a
 		>
 	</div>

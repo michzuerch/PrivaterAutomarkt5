@@ -1,7 +1,6 @@
 ---
 import Navigation from "~/components/Navigation.astro";
 import Footer from "~/components/Footer.astro";
-const { content } = Astro.props;
 ---
 
 <html lang="de">
@@ -17,9 +16,8 @@ const { content } = Astro.props;
 			<Navigation />
 			<main>
 				<slot />
-				<!-- Dein Inhalt wird hier eingefügt -->
 			</main>
-			<Footer/>
+			<Footer />
 		</div>
 	</body>
 </html>
