@@ -8,7 +8,7 @@ export function setMap(
 		latitude,
 		longitude,
 		zoom,
-		markerMarkup = '',
+		markerMarkup = 'Marker',
 	}: { latitude: number; longitude: number; zoom: number; markerMarkup?: string }
 ) {
 	(async () => {
