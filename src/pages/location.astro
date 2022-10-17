@@ -1,5 +1,28 @@
 ---
-import MainLayout from '../layouts/main.astro';
+import Layout from '../layouts/leaflet.astro';
+import * as L from 'leaflet';
+
+// center of the map
+var center = [-33.865, 151.2094];
+
+// initialize the map on the "map" div with a given center and zoom
+var map = L.map('map', {
+	center: [51.505, -0.09],
+	zoom: 13,
+});
+
+// Create the map
+var map = L.map('map').setView(center, 3);
+
+// Set up the OSM layer
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 18,
+}).addTo(map);
+
+// add a marker in the given location
+L.marker(center).addTo(map);
 ---
 
-<MainLayout />
+<Layout>
+	<div id="map" class="h-96"></div>
+</Layout>
