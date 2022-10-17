@@ -6,17 +6,10 @@
 		longitude: number;
 	};
 	export let zoom: number = 19;
-	export let markerMarkup: string = '';
+	export let markerMarkup: string = 'Hier';
 
 	const { latitude, longitude } = location;
 </script>
 
-<figure use:setMap={{ latitude, longitude, zoom, markerMarkup }} />
+<figure class="h-screen w-screen" use:setMap={{ latitude, longitude, zoom, markerMarkup }} />
 
-<style>
-	figure {
-		width: 38rem;
-		height: 21rem;
-		box-shadow: var(--shadow-elevation-low);
-	}
-</style>

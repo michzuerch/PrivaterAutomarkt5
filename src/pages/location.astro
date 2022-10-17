@@ -25,34 +25,8 @@ marker
 ---
 
 <Layout>
-	<div class="container">
-		<h1>🚀 Astro Location Map with Leaflet</h1>
-		<section class="wrapper">
-			<h2>We are here:</h2>
-			<Map client:load {location} zoom={14} markerMarkup="<p>We are here!</p>" />
-		</section>
+	<div class="container h-screen w-screen mx-auto">
+		<h1>So finden Sie uns...</h1>
+			<Map client:load {location} zoom={14} markerMarkup="<p>Hier sind wir</p>" />
 	</div>
-	<style>
-		.container {
-			background-color: var(--colour-light);
-			border-radius: var(--spacing-1);
-			padding: var(--spacing-8);
-			width: min(100% - var(--spacing-16), var(--max-width-wrapper));
-			margin: var(--spacing-16) auto;
-		}
-
-		.container h1 {
-			padding: var(--spacing-0) var(--spacing-8);
-		}
-
-		.wrapper {
-			display: grid;
-			place-items: center;
-			background-color: var(--colour-brand);
-			border: var(--spacing-px) solid var(--colour-alt);
-			border-radius: var(--spacing-px);
-			padding: var(--spacing-8) auto;
-			margin: var(--spacing-8);
-		}
-	</style>
 </Layout>
