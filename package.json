@@ -30,7 +30,7 @@
     "format": "prettier -w .",
     "lint": "eslint . --ext .js,.ts,.astro",
     "subfont": "subfont -ir --no-fallbacks --silent --root dist",
-    "server": "http-server ./dist --port 8080"
+    "server": "http-server ./dist --port 8080  --brotli --gzip -c-1"
   },
   "devDependencies": {
     "@astrojs/image": "^0.10.0",
