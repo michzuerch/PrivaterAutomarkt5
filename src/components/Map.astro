@@ -1,0 +1,33 @@
+---
+/* —————————————————————————————————————————————————————————————————————————— */
+---
+
+<div id="map" style="z-index: 0; width: 50%; height: 50%;"></div>
+
+<script>
+	import Leaflet from 'leaflet';
+	const mapElem = document.querySelector('.leaflet-map');
+	const map = Leaflet.map('map').setView([47.74328116552683, 8.95500133471874], 14);
+
+	Leaflet.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	}).addTo(map);
+
+	const marker = Leaflet.marker([47.74328116552683, 8.95500133471874]).addTo(map);
+
+	marker
+		.bindPopup(
+			"<div><b>Privater Automarkt</b><br>Herrenlandstrasse 39<br>78315 Radolfzell<br><img src='MapPopupSmall.jpg'/></div>"
+		)
+		.openPopup();
+</script>
+
+<!-- FIXME: `define:vars` not working in this component only -->
+<style lang="scss" is:global>
+	// Importing leaflet CSS here, not working in Astro frontmatter
+	@import 'leaflet';
+	.leaflet-control-attribution {
+		display: var(--display, 'initial');
+	}
+</style>

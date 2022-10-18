@@ -1,32 +1,13 @@
 ---
 import Layout from '../layouts/main.astro';
-import Map from '~components/Map.svelte';
-import '~styles/fonts.css';
-import '~styles/global.css';
-import 'leaflet/dist/leaflet.css';
+import Map from '../components/Map.astro';
 
 const location = { latitude: 47.74328116552683, longitude: 8.95500133471874 };
-
-/* import * as L from 'leaflet';
-
-var map = L.map('map').setView([47.74328116552683, 8.95500133471874], 14);
-
-L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
-	maxZoom: 18,
-	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-}).addTo(map);
-
-var marker = L.marker([47.74328116552683, 8.95500133471874]).addTo(map);
-marker
-	.bindPopup(
-		"<div><b>Privater Automarkt</b><br>Herrenlandstrasse 39<br>78315 Radolfzell<br><img src='MapPopupSmall.jpg'/></div>"
-	)
-	.openPopup(); */
 ---
 
 <Layout>
 	<div class="container h-screen w-screen mx-auto">
 		<h1>So finden Sie uns...</h1>
-			<Map client:load {location} zoom={14} markerMarkup="<p>Hier sind wir</p>" />
+		<Map />
 	</div>
 </Layout>
