@@ -12,6 +12,7 @@ module.exports = {
 		// theme extensions
 		extend: {},
 	},
+
 	plugins: [
 		require("@tailwindcss/aspect-ratio"),
 		require("@tailwindcss/typography"),

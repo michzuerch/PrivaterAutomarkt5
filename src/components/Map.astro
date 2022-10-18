@@ -1,6 +1,5 @@
 ---
 import "leaflet/dist/leaflet.css";
-/* —————————————————————————————————————————————————————————————————————————— */
 ---
 
 <div id="map" class="pb-10 w-full h-96"></div>
@@ -8,8 +7,7 @@ import "leaflet/dist/leaflet.css";
 <script>
 	import Leaflet from "leaflet";
 	const map = Leaflet.map("map").setView(
-		[47.74315477543156, 8.954879998216272],
-		14
+		[47.74315477543156, 8.954879998216272],14
 	);
 
 	Leaflet.tileLayer(
@@ -27,7 +25,7 @@ import "leaflet/dist/leaflet.css";
 
 	marker
 		.bindPopup(
-			"<div><b>Privater Automarkt</b><br>Herrenlandstrasse 39<br>78315 Radolfzell<br><img src='MapPopupSmall.jpg'/></div>"
+			"<div><b>Privater Automarkt</b><br>Herrenlandstrasse 39<br>78315 Radolfzell</div>"
 		)
 		.openPopup();
 </script>

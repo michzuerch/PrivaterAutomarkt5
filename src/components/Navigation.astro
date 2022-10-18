@@ -11,7 +11,7 @@ const urlHome = Astro.url.pathname;
 			<label tabindex="0" class="btn btn-ghost lg:hidden">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
-					class="h-5 w-5"
+					class="w-5 h-5"
 					fill="none"
 					viewBox="0 0 24 24"
 					stroke="currentColor"
@@ -23,32 +23,32 @@ const urlHome = Astro.url.pathname;
 				</svg>
 			</label>
 			<ul
-				class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+				class="p-2 mt-3 w-52 shadow menu menu-compact dropdown-content bg-base-100 rounded-box"
 			>
 				<li><a href="gallery">Galerie</a></li>
 				<li><a href="location">Standort</a></li>
 				<li><a href="impressum">Impressum</a></li>
 			</ul>
 		</div>
-		<a href={urlHome} class="btn btn-ghost normal-case text-xl"
+		<a href={urlHome} class="text-xl normal-case btn btn-ghost"
 			>Privater Automarkt</a
 		>
 	</div>
-	<div class="navbar-center hidden lg:flex">
-		<ul class="menu menu-horizontal p-0">
+	<div class="hidden navbar-center lg:flex">
+		<ul class="p-0 menu menu-horizontal">
 			<li><a href="gallery">Galerie</a></li>
 			<li><a href="location">Standort</a></li>
 			<li><a href="impressum">Impressum</a></li>
 		</ul>
 	</div>
-	<div class="navbar-end pl-3">
+	<div class="pl-3 navbar-end">
 		<label class="swap swap-rotate">
 			<!-- this hidden checkbox controls the state -->
 			<input type="checkbox" data-toggle-theme="dark,light" class="hidden" />
 
 			<!-- sun icon -->
 			<svg
-				class="swap-on fill-current w-10 h-10"
+				class="w-10 h-10 fill-current swap-on"
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 24 24"
 			>
@@ -59,7 +59,7 @@ const urlHome = Astro.url.pathname;
 
 			<!-- moon icon -->
 			<svg
-				class="swap-off fill-current w-10 h-10"
+				class="w-10 h-10 fill-current swap-off"
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 24 24"
 			>
